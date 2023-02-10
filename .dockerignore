@@ -1,0 +1,12 @@
+# @TODO: it would be better to do a "ignore all except..." but that can be a bit confusing for
+# developers not familiar with .dockerignore this approach
+
+docker-compose.*.yml
+README.md
+docker-compose.override.yml
+docker-compose.override.yml.dist
+./.env.example
+./.env
+.dockerdata
+./dump
+./config

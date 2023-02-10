@@ -1,0 +1,25 @@
+{
+    "name": "fred-aghq/simple-php-cli",
+    "description": "Simple PHP CLI toolkit",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fred Spooner",
+            "email": "fred@aghq.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/console": "6.3.x-dev",
+        "aws/aws-sdk-php": "^3.257",
+        "league/csv": "^9.0@dev",
+        "fzaninotto/faker": "^1.9@dev",
+        "nesbot/carbon": "3.x-dev",
+        "illuminate/collections": "^11.0@dev"
+    }
+}

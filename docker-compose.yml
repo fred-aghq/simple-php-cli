@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  app:
+    build:
+      context: .
+      target: base
+      args:
+        VER_COMPOSER: ${VER_COMPOSER:-2.5}
+        VER_PHP: ${VER_PHP:-8.2}
+    env_file:
+      - config/app.env

@@ -1,0 +1,8 @@
+.env
+docker-compose.override.yml
+.idea/
+.dockerdata
+.DS_Store
+config/app.dev.env
+config/app.prod.env
+config/app.env
