@@ -1,11 +1,9 @@
 <?php
 
 use App\Command\Hello;
-use App\DynamoDB\Command\BulkModifyElasticsearchUrl;
 use App\DynamoDB\Command\ImportDataFromFile;
 use App\DynamoDB\Command\ImportLocalTableSchema;
 use App\DynamoDB\Command\SeedTable;
-use App\DynamoDB\Command\SeedTenantTables;
 use Symfony\Component\Console\Application;
 use App\Command\CurrentEnv;
 
