@@ -3,7 +3,6 @@
 namespace App\DynamoDB\Command;
 
 use App\DynamoDB\Service\DynamoDbService;
-use App\Helper\App;
 use App\Trait\ConfirmExecutionTrait;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;

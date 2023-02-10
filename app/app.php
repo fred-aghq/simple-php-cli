@@ -1,11 +1,11 @@
 <?php
 
+use App\Command\CurrentEnv;
 use App\Command\Hello;
 use App\DynamoDB\Command\ImportDataFromFile;
 use App\DynamoDB\Command\ImportLocalTableSchema;
 use App\DynamoDB\Command\SeedTable;
 use Symfony\Component\Console\Application;
-use App\Command\CurrentEnv;
 
 const APP_PATH = __DIR__;
 require __DIR__ . '/vendor/autoload.php';
