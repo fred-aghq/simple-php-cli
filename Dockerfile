@@ -1,6 +1,7 @@
 ARG VER_PHP=8.2
 ARG VER_COMPOSER=2.5
 
+FROM composer:${VER_COMPOSER} as composer
 FROM php:${VER_PHP}-cli AS base
 
 RUN apt-get update && apt-get install -y zip git
@@ -11,8 +12,7 @@ WORKDIR /app
 
 ADD ./app /app
 
-# It would be nice if we could pull through specific VER_COMPOSER but i cant get ARG to work with COPY --from
-COPY --from=composer:2.5 /usr/bin/composer /composer
+COPY --from=composer /usr/bin/composer /composer
 
 RUN COMPOSER_ALLOW_SUPERUSER=1 /composer install --no-dev \
     && /composer dump-autoload \
